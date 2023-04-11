@@ -9,6 +9,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Icon(Icons.star));
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: Text('app')),
+        body: Text('app'),
+        bottomNavigationBar: BottomAppBar(
+          height: 50,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Icon(Icons.phone),
+              Icon(Icons.message),
+              Icon(Icons.contact_page),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
