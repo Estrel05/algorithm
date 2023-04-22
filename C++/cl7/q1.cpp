@@ -4,19 +4,15 @@ using namespace std;
 int big(int x, int y) {  // 3항 연산자 사용해보기
     if (x > 100 || y > 100)
         return 100;
-    else if (x > y)
-        return x;
     else
-        return y;
+        return (x > y) ? x : y;
 }
 
 int big(int x, int y, int z) {
     if (x > z || y > z)
         return z;
-    else if (x > y)
-        return x;
     else
-        return y;
+        return (x > y) ? x : y;
 }
 
 int main() {
