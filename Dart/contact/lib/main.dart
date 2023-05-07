@@ -28,4 +28,12 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-//crtl + shift + R
+/*
+crtl + shift + R → extract, wrap
+extract를 사용하여 위젯 재사용
+SingleChildScrollView 좌우 스크롤
+required 필요한 요소 정의
+final 위젯 재사용 시 변경 값
+circular 각 둥글게
+only 특정 부분만 변경할 때
+*/
