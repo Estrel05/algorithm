@@ -11,12 +11,12 @@ class Shape {
     ~Shape() { cout << "Shape ¼Ò¸êÀÚ()" << endl; }
 };
 
-class Rectangle : public Shape {
+class Rect : public Shape {
     int width, height;
 
    public:
-    Rectangle(int xloc, int yloc, int w, int h);
-    ~Rectangle() { cout << "Rectangle ¼Ò¸êÀÚ()" << endl; }
+    Rect(int xloc, int yloc, int w, int h);
+    ~Rect() { cout << "Rectangle ¼Ò¸êÀÚ()" << endl; }
 };
 
-int main() { Rectangle r(4, 6, 100, 100); }
+int main() { Rect r(4, 6, 100, 100); }
