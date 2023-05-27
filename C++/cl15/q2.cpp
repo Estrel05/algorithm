@@ -31,4 +31,7 @@ class의 일반화
     - 함수의 구현부 앞
 2. 일반화할 멤버 변수 및 지역 변수를 T로 선언
 3. 멤버 함수 구현 시: "클래스 이름" <T>
+    ex)
+    template <class T>
+    void MyStack <T>::pop()
 */
