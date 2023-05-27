@@ -67,7 +67,7 @@ void BookManager::bookIn() {
         Book b(title, author, year);
         v.push_back(b);
     }
-    cout << "총 입고된 책은 " << v.size() << "권입니다.";
+    cout << "총 입고된 책은 " << v.size() << "권입니다." << endl;
 }
 
 void BookManager::run() {
