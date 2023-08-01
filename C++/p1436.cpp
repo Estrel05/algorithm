@@ -1,17 +1,22 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main() {
-    int n, count = 0;
-    long num = 665;
+    int n, num = 666, count = 0;
 
     cin >> n;
     while (1) {
-        num++;
-        string strnum = to_string(num);
-        if (strnum.find("666") != string::npos) count++;
+        int tmp = num;
+        while (1) {
+            if (tmp % 1000 == 666) {
+                count++;
+                break;
+            } else if (tmp < 666)
+                break;
+            tmp /= 10;
+        }
         if (count == n) break;
+        num++;
     }
     cout << num << '\n';
 }
