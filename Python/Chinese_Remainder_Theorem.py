@@ -1,5 +1,6 @@
 import sys
 
+
 def extended_gcd(a, b):
     r0, r1 = a, b
     s0, s1 = 1, 0
@@ -18,4 +19,14 @@ def extended_gcd(a, b):
 
     return s0
 
-N= 5
+
+a1, a2, a3 = extended_gcd(187, 5), extended_gcd(85, 11), extended_gcd(55, 17)
+if a1 < 0:
+    a1 += 5
+if a2 < 0:
+    a2 += 11
+if a3 < 0:
+    a3 += 17
+
+x = 2 * 187 * a1 + 3 * 85 * a2 + 5 * 55 * a3
+print(x % 935)

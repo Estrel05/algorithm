@@ -20,4 +20,5 @@ int main() {
         cin >> r >> n;
         cout << combination(n, r) << '\n';
     }
+    
 }

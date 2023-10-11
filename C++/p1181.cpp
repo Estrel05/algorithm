@@ -15,6 +15,8 @@ int main() {
     cin >> n;
     string dictionary[n];
 
+
+
     for (int i = 0; i < n; i++) cin >> dictionary[i];
     sort(dictionary, dictionary + n, cmp);
 
