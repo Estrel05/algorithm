@@ -16,4 +16,4 @@ def Catalan(n):
     return memo[n]
 
 
-print(Catalan(9))
+print(Catalan(5))

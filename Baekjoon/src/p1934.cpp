@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-int gcd(int a, int b) {
+int lcm(int a, int b) {
     if (b % a == 0)
         return a;
     else
-        return gcd(b % a, a);
+        return lcm(b % a, a);
 }
 
 int main() {
@@ -14,6 +14,6 @@ int main() {
     cin >> t;
     for (int i = 0; i < t; i++) {
         cin >> a >> b;
-        cout << a * b / gcd(a, b) << '\n';
+        cout << a * b / lcm(a, b) << '\n';
     }
 }

@@ -23,4 +23,4 @@ def catalan(n):
 
 Catalan = memoize(catalan)
 
-print(Catalan(0))
+print(Catalan(30))

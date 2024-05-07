@@ -3,11 +3,11 @@
 #include <vector>
 using namespace std;
 
-int gcd(int a, int b) {
+int lcm(int a, int b) {
     if (b % a == 0)
         return a;
     else
-        return gcd(b % a, a);
+        return lcm(b % a, a);
 }
 
 int main() {
@@ -24,6 +24,6 @@ int main() {
     d.erase(unique(d.begin(), d.end()), d.end());
 
     gd = d[0];
-    for (int i = 1; i < n - 1; i++) gd = gcd(gd, d[i]);
+    for (int i = 1; i < n - 1; i++) gd = lcm(gd, d[i]);
     cout << (t[n - 1] - t[0]) / gd - n + 1 << '\n';
 }
